@@ -25,48 +25,48 @@ export default function MobileNav() {
               <AccordionTrigger className="text-base font-medium">Бидний тухай</AccordionTrigger>
               <AccordionContent>
                 <div className="flex flex-col space-y-2 pl-4">
-                  <Link href="#" className="py-2 hover:text-primary" onClick={() => setOpen(false)}>
+                  <Link href="/about" className="py-2 hover:text-primary" onClick={() => setOpen(false)}>
                     Түүх
                   </Link>
-                  <Link href="#" className="py-2 hover:text-primary" onClick={() => setOpen(false)}>
+                  <Link href="/about" className="py-2 hover:text-primary" onClick={() => setOpen(false)}>
                     Эрхэм зорилго
                   </Link>
-                  <Link href="#" className="py-2 hover:text-primary" onClick={() => setOpen(false)}>
+                  <Link href="/about" className="py-2 hover:text-primary" onClick={() => setOpen(false)}>
                     Удирдлага
                   </Link>
                 </div>
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="academics">
-              <AccordionTrigger className="text-base font-medium">Сургалт</AccordionTrigger>
+              <AccordionTrigger className="text-base font-medium">Элсэлт</AccordionTrigger>
               <AccordionContent>
                 <div className="flex flex-col space-y-2 pl-4">
-                  <Link href="#" className="py-2 hover:text-primary" onClick={() => setOpen(false)}>
+                  <Link href="/programs" className="py-2 hover:text-primary" onClick={() => setOpen(false)}>
                     Бакалавр
                   </Link>
-                  <Link href="#" className="py-2 hover:text-primary" onClick={() => setOpen(false)}>
+                  <Link href="/programs" className="py-2 hover:text-primary" onClick={() => setOpen(false)}>
                     Магистр
                   </Link>
-                  <Link href="#" className="py-2 hover:text-primary" onClick={() => setOpen(false)}>
+                  <Link href="/programs" className="py-2 hover:text-primary" onClick={() => setOpen(false)}>
                     Докторантур
                   </Link>
                 </div>
               </AccordionContent>
             </AccordionItem>
           </Accordion>
-          <Link href="#" className="py-2 font-medium hover:text-primary" onClick={() => setOpen(false)}>
-            Элсэлт
+          <Link href="/cooperation" className="py-2 font-medium hover:text-primary" onClick={() => setOpen(false)}>
+          Хамтын ажиллагаа
+          </Link>
+          <Link href="/student-life" className="py-2 font-medium hover:text-primary" onClick={() => setOpen(false)}>
+          Оюутны амьдрал
+          </Link>
+          <Link href="/news" className="py-2 font-medium hover:text-primary" onClick={() => setOpen(false)}>
+          Мэдээ
           </Link>
           <Link href="#" className="py-2 font-medium hover:text-primary" onClick={() => setOpen(false)}>
-            Судалгаа
+          Нээлттэй ажилын байр
           </Link>
-          <Link href="#" className="py-2 font-medium hover:text-primary" onClick={() => setOpen(false)}>
-            Оюутны амьдрал
-          </Link>
-          <Link href="#" className="py-2 font-medium hover:text-primary" onClick={() => setOpen(false)}>
-            Мэдээ
-          </Link>
-          <Link href="#" className="py-2 font-medium hover:text-primary" onClick={() => setOpen(false)}>
+          <Link href="/contact" className="py-2 font-medium hover:text-primary" onClick={() => setOpen(false)}>
             Холбоо барих
           </Link>
         </nav>
