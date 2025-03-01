@@ -205,7 +205,7 @@ export default function Home() {
                 <NewsCard
                   title="Оюутны судалгааны ажил олон улсын шагнал хүртлээ"
                   date="2024-02-20"
-                  image="/oyutan_hamtiin_ajilgaa.jpg?height=200&width=400"
+                  image="/oyutan_hamtiin_ajilga.jpg?height=200&width=400"
                   category="Судалгаа"
                 />
               </AnimatedElement>
