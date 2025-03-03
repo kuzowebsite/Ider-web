@@ -89,7 +89,7 @@ export default function MobileNav() {
               Хамтын ажиллагаа
             </Link>
             <Link href="/student-life" className="py-2 font-medium hover:text-primary" onClick={() => setOpen(false)}>
-              Оюутны амьдрал
+              Оюутны булан
             </Link>
             <Link href="/news" className="py-2 font-medium hover:text-primary" onClick={() => setOpen(false)}>
               Мэдээ
