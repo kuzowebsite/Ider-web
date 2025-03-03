@@ -15,7 +15,7 @@ export const translations: Translations = {
     home: "Нүүр",
     admission: "Элсэлт",
     cooperation: "Хамтын ажиллагаа",
-    student_life: "Оюутны амьдрал",
+    student_life: "Оюутны булан",
     news: "Мэдээ",
     jobs: "Нээлттэй ажилын байр",
     contact: "Холбоо барих",
