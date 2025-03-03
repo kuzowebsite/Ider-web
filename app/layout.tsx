@@ -14,10 +14,10 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="mn">
-      <body>
-        <LanguageProvider>{children}</LanguageProvider>
-      </body>
-    </html>
+    <html lang="mn" className="overflow-x-hidden">
+    <body className="overflow-x-hidden">
+      <LanguageProvider>{children}</LanguageProvider>
+    </body>
+  </html>
   )
 }
