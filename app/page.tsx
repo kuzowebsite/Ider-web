@@ -10,10 +10,13 @@ import TestimonialCard from "@/components/testimonial-card"
 import MobileNav from "@/components/mobile-nav"
 import AnimatedElement from "@/components/animated-element"
 import AnimatedHero from "@/components/animated-hero"
-import LanguageSwitcher from "@/components/language-switcher"
-import { useTranslation } from "@/hooks/use-translation"
 
-export default function Home() {
+import { useTranslation } from "@/hooks/use-translation"
+import LanguageSwitcher from "@/components/language-switcher"
+
+import { RegisterButton } from "@/components/register-button"
+
+export default function RegisterPage() {
   const { t } = useTranslation()
 
   return (
@@ -26,6 +29,7 @@ export default function Home() {
             </Link>
           </div>
           <div className="flex items-center gap-4">
+            <LanguageSwitcher />
             <div className="hidden md:flex items-center gap-4">
               <Link
                 href="http://ider.monbiblio.com/opac/index.php"
@@ -41,16 +45,14 @@ export default function Home() {
                 <FileText className="h-4 w-4" />
                 СУРГАЛТЫН СИСТЕМД НЭВТРЭХ
               </Link>
-              <Link
-                href="/register"
-                className="inline-flex items-center gap-2 rounded-full bg-[#FFD700] px-4 py-2 text-sm font-medium text-gray-900 hover:bg-[#ffd900]"
-              >
-                Бүртгүүлэх
-              </Link>
-              <LanguageSwitcher />
+              <div className="inline-flex items-center gap-2">
+                <RegisterButton className="rounded-full bg-[#FFD700] px-4 py-2 text-sm font-medium text-gray-900 hover:bg-[#ffd900]">
+                  Бүртгүүлэх
+                </RegisterButton>
+              </div>
             </div>
-          </div>
         </div>
+      </div>
       </div>
 
       <header className="border-b bg-white py-4">
@@ -411,4 +413,3 @@ export default function Home() {
     </div>
   )
 }
-
