@@ -1,33 +1,34 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import Image from "next/image"
+import { Card, CardContent } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
 
 interface PartnerCardProps {
   name: string
-  country: string
+  type: string
   description: string
-  logo: string
+  image: string
 }
 
-export default function PartnerCard({ name, country, description, logo }: PartnerCardProps) {
+export default function PartnerCard({ name, type, description, image }: PartnerCardProps) {
   return (
-    <Card className="flex flex-col">
-      <CardHeader>
-        <div className="flex items-center gap-4">
-          <Image
-            src={logo || "/placeholder.svg"}
-            alt={`${name} logo`}
-            width={80}
-            height={80}
-            className="rounded-full"
-          />
-          <div>
-            <CardTitle>{name}</CardTitle>
-            <CardDescription>{country}</CardDescription>
-          </div>
+    <Card className="group overflow-hidden transition-all hover:shadow-lg">
+      <div className="relative aspect-[16/9] overflow-hidden">
+        <Image
+          src={image || "/placeholder.svg"}
+          alt={name}
+          fill
+          className="object-cover transition-transform duration-300 group-hover:scale-105"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent" />
+        <div className="absolute bottom-0 left-0 p-4">
+          <Badge variant="secondary" className="mb-2 bg-white/90 text-foreground">
+            {type}
+          </Badge>
+          <h3 className="text-lg font-semibold text-white drop-shadow-md">{name}</h3>
         </div>
-      </CardHeader>
-      <CardContent className="flex-grow">
-        <p>{description}</p>
+      </div>
+      <CardContent className="p-4">
+        <p className="text-sm text-muted-foreground">{description}</p>
       </CardContent>
     </Card>
   )
