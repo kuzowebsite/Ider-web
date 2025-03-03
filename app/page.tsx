@@ -46,9 +46,13 @@ export default function RegisterPage() {
                 СУРГАЛТЫН СИСТЕМД НЭВТРЭХ
               </Link>
               <div className="inline-flex items-center gap-2">
-                <RegisterButton className="rounded-full bg-[#FFD700] px-4 py-2 text-sm font-medium text-gray-900 hover:bg-[#ffd900]">
-                  Бүртгүүлэх
-                </RegisterButton>
+              <Link
+                href="/register"
+                className="inline-flex items-center gap-2 rounded-full bg-[#4CAF50] px-4 py-2 text-sm font-medium text-white hover:bg-[#45a049]"
+              >
+                <FileText className="h-4 w-4" />
+                Бүртгүүлэх
+              </Link>
               </div>
             </div>
         </div>
@@ -413,3 +417,4 @@ export default function RegisterPage() {
     </div>
   )
 }
+
